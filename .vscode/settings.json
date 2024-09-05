@@ -3,6 +3,8 @@
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "c:\\Users\\Thaiv\\Downloads\\jfugue-5.0.9.jar"
+        "c:\\Users\\Thaiv\\Downloads\\jfugue-5.0.9.jar",
+        "c:\\Users\\hoang\\Downloads\\jfugue-5.0.9.jar",
+        "c:\\Users\\hoang\\Desktop\\Jfugue\\jfugue-5.0.9.jar"
     ]
 }
