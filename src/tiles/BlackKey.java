@@ -32,7 +32,7 @@ public class BlackKey extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                setBackground(Color.DARK_GRAY); // Change background to yellow on key press
+                setBackground(Color.DARK_GRAY); // Change background to gray on key press
                 System.out.println("Key pressed: " + bNote);
             }
         });
@@ -42,7 +42,7 @@ public class BlackKey extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if(!pedal){
-                setBackground(Color.BLACK); // Reset background to white on key release
+                setBackground(Color.BLACK); // Reset background to black on key release
                 System.out.println("Key released: " + bNote);
                 }
             }

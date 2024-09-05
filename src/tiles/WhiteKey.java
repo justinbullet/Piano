@@ -33,7 +33,7 @@ public class WhiteKey extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                setBackground(Color.LIGHT_GRAY); // Change background to yellow on key press
+                setBackground(Color.LIGHT_GRAY); // Change background to gray on key press
                 System.out.println("Key pressed: " + note);
             }
         });
