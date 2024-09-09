@@ -8,8 +8,13 @@ public class BlackKey extends JPanel {
     // Class implementation
     private final String bNote;
     boolean pedal = false;
+    int height = 100;
+    int width = 100;
     public BlackKey(int width, int height, String bNote, int bKey){
         this.bNote = bNote;
+        this.height = height;
+        this.width = width;
+        setLayout(null);
         setPreferredSize(new Dimension(width, height));
         setBackground(Color.BLACK);
         setBorder(BorderFactory.createLineBorder(Color.GRAY));
@@ -47,6 +52,24 @@ public class BlackKey extends JPanel {
                 }
             }
         });
+    }
+    //getter/setter
+    public void pedalON(){
+        this.pedal = true;
+    }
+    public void pedalOFF(){
+        this.pedal = false;
+    }
+    public String getNodte(){
+        return this.bNote;
+    }
+    @Override
+    public int getHeight(){
+        return this.height;
+    }
+    @Override
+    public int getWidth(){
+        return this.width;
     }
 }
 

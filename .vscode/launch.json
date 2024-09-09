@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HelloWorldGUI",
+            "request": "launch",
+            "mainClass": "HelloWorldGUI",
+            "projectName": "Pianopiano_e9604cd3"
+        },
+        {
+            "type": "java",
+            "name": "PianoPedalExample",
+            "request": "launch",
+            "mainClass": "PianoPedalExample",
+            "projectName": "Pianopiano_e9604cd3"
+        },
+        {
+            "type": "java",
             "name": "testRhythm",
             "request": "launch",
             "mainClass": "testRhythm",

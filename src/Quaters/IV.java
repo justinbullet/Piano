@@ -1,4 +1,4 @@
-package Quaters;
+package quaters;
 
 public class IV {
     

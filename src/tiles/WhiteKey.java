@@ -9,6 +9,7 @@ public class WhiteKey extends JPanel {
     boolean pedal = false;
     public WhiteKey(int width, int height, String note, int keyCode) {
         this.note = note;
+        setLayout(null);
         setPreferredSize(new Dimension(width, height));
         setBackground(Color.WHITE);
         setBorder(BorderFactory.createLineBorder(Color.BLACK));
@@ -49,6 +50,16 @@ public class WhiteKey extends JPanel {
             }
         });
     }
+        //getter/setter
+        public boolean pedalON(){
+            return pedal;
+        }
+        public boolean pedalOFF(){
+            return !pedal;
+        }
+        public String getNote(){
+            return note;
+        }
 }
 
 
