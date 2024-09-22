@@ -13,3 +13,4 @@ public class MusicPlayer {
         player.play(pattern);
     }
 }
+ 

@@ -11,7 +11,7 @@ public class Q extends JLayeredPane {
 
     public void setPiano(int start, int finish, int keyWidth) {
         int whiteKeyPosition = 0;
-        int blackKeyOffset = keyWidth / 2; // Offset to align black keys between white keys
+        int blackKeyOffset = keyWidth / 3; // Offset to align black keys between white keys
 
         // Add white keys first to the base layer
         for (int i = start; i <= finish; i++) {
@@ -27,7 +27,7 @@ public class Q extends JLayeredPane {
         whiteKeyPosition = 0; // Reset position for black key placement
         for (int i = start; i <= finish; i++) {
             if (isBlackKey(i)) { // Black key
-                BlackKey blackKey = new BlackKey(keyWidth, this.getHeight() / 3 * 2, String.valueOf(i), KeyEvent.VK_ENTER);
+                BlackKey blackKey = new BlackKey(keyWidth / 3 * 2, this.getHeight() / 3 * 2, String.valueOf(i), KeyEvent.VK_ENTER);
                 int blackKeyPosition = whiteKeyPosition - blackKeyOffset;
                 blackKey.setBounds(blackKeyPosition, 0, blackKey.getWidth(), blackKey.getHeight());
                 this.add(blackKey, JLayeredPane.PALETTE_LAYER); // Add black keys to a higher layer
@@ -45,5 +45,9 @@ public class Q extends JLayeredPane {
     private boolean isBlackKey(int keyNumber) {
         int mod = keyNumber % 12;
         return mod == 1 || mod == 3 || mod == 6 || mod == 8 || mod == 10;
+    }
+    private boolean isDeleted(int i){
+        int mod = i % 12;
+        return mod == 1 || mod == 3 ||mod  == 5|| mod == 6 || mod == 8 || mod == 10 || mod  == 12;
     }
 }

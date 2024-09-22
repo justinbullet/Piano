@@ -7,7 +7,7 @@ public class HelloWorldGUI {
 
         Q q = new Q();
         q.setSize(1600, 400);
-        q.setPiano(9,23, 100);
+        q.setPiano(9,35, 100);
         q.setVisible(true);
         // Set default close operation for the frame
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
